@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Tapestry&display=swap');
+
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.item_page {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  text-align: center;
+ /* background-color: aquamarine; */
+ background-color: seashell;
+
+}
+
+.home_link {
+  align-items: right;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: lavenderblush;
+  background-color: MidnightBlue;
+}
+
+
+.signup{
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 20px;
+}
+.loginform{
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 20px;
+}
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .15em; /* size of the corner */
+  --color: white;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  font-weight: bold;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
